@@ -45,7 +45,7 @@ public class CartOperationServiceImpl implements CartOperationService {
 			if(iterator.next().getName().equals(p.getName())) {
 				
 				invoiceAmount=invoiceAmount-(p.getPrice()*p.getQuantity()+tax_percentage);	
-				System.out.println("Amount after removal is "+ invoiceAmount);
+				System.out.println("Total Amount after removal is:: "+ invoiceAmount);
 				iterator.remove();
 			}
 		}
